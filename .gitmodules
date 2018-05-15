@@ -1,0 +1,6 @@
+[submodule "evm-semantics"]
+	path = evm-semantics
+	url = https://github.com/dapphub/evm-semantics.git
+[submodule "verified-smart-contracts"]
+	path = verified-smart-contracts
+	url = https://github.com/runtimeverification/verified-smart-contracts.git

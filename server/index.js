@@ -43,6 +43,9 @@ wsServer.on('request', function(request) {
     });
   });
   connection.on('close', function(reasonCode, description) {
+    handler({type: "stop"}, (resp) => {
+      connection.sendUTF(JSON.stringify(resp));
+    });
     console.log((new Date()) + ' Peer ' + connection.remoteAddress + ' disconnected.');
   });
 });
